@@ -21,6 +21,6 @@ CONTENT	0 or more content bytes
 
 Example:
 ```
-"hello"	>	[]byte{ 5 , h , e , l , l , o}
-42		>	[]byte{ 2, '4', '2'}
+"hello" -> []byte{ 5 , h , e , l , l , o}
+42      -> []byte{ 2, '4', '2'}
 ```
