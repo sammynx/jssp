@@ -9,11 +9,11 @@ using a length-value representation.
 
 jprot: jerry protocol
 
-**NUMBER**		{+-}?{0..9}+		Max. length   9 digits + 1 for sign
+**NUMBER:**     {+-}?{0..9}+		Max. length   9 digits + 1 for sign
 
-**TEXTSTRING**	{Unicode char}*		Max. length 256 bytes
+**TEXTSTRING:**	{UTF-8 char}*		Max. length 256 bytes
 
-**MESSAGE**		{<NUMBER> | <TEXTSTRING>}+
+**MESSAGE:**		{**NUMBER | TEXTSTRING**}+
 
 Encoding uses LENGTH-CONTENT encoding:
 LENGTH	1 byte, value is the number of content bytes
